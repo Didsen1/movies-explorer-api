@@ -6,12 +6,12 @@ const MODE_PRODUCTION = 'production';
 const DEV_KEY = 'dev-secret-key';
 
 const ALLOWED_CORS = [
-  'http://didsen1.students.nomoredomainsrocks.ru',
-  'https://didsen1.students.nomoredomainsrocks.ru',
+  'http://didsen1.movies.nomoredomainsmonster.ru',
+  'https://didsen1.movies.nomoredomainsmonster.ru',
   'http://localhost:3000',
   'https://localhost:3000',
-  'http://84.201.159.80',
-  'https://84.201.159.80',
+  'http://158.160.125.97',
+  'https://158.160.125.97',
 ];
 
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PATCH,POST,DELETE';
