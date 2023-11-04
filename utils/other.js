@@ -10,8 +10,8 @@ const ALLOWED_CORS = [
   'https://didsen1.movies.nomoredomainsmonster.ru',
   'http://localhost:3000',
   'https://localhost:3000',
-  'http://158.160.125.97',
-  'https://158.160.125.97',
+  'http://51.250.90.141',
+  'https://51.250.90.141',
 ];
 
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PATCH,POST,DELETE';

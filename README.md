@@ -36,6 +36,6 @@
 
 ## Ссылки на проект
 
-IP 158.160.125.97
+IP 51.250.90.141
 
 Backend api.didsen1.movies.nomoredomainsmonster.ru
