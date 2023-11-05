@@ -5,11 +5,10 @@ const NotFoundError = require('../errors/NotFoundError');
 const ForbiddenError = require('../errors/ForbiddenError');
 
 function getMovie(req, res, next) {
-  const { _id } = req.user;
+  const { userId } = req.user;
 
   Movie
-    .find({ _id })
-    .populate(['owner', '_id'])
+    .find({ owner: userId })
     .then((movies) => {
       if (movies) return res.send({ movies });
 
