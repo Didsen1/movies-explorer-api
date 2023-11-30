@@ -9,12 +9,16 @@ function getMovie(req, res, next) {
 
   Movie
     .find({ owner: userId })
+    .orFail()
     .then((movies) => {
       if (movies) return res.send({ movies });
 
       throw new NotFoundError('Пользователь с таким id не найден');
     })
     .catch((err) => {
+      if (err.name === 'DocumentNotFoundError') {
+        next(new NotFoundError('Не найдены карточки фильмов пользователя'));
+      }
       if (err.name === 'CastError') {
         next(new InaccurateDataError('Передан некорректный id'));
       } else {
